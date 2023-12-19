@@ -1,0 +1,31 @@
+@for $i from 2 through 7 {
+    $weight: $i * 100;
+
+    .fw-#{$weight} {
+        font-weight: $weight;
+    }
+}
+
+.heading {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+// Letter Spacing
+.ls-lg {
+    letter-spacing: 1.5px;
+}
+
+// Font Sizes
+.fs-sm {
+    font-size: .85rem;
+}
+
+// Links
+.text-decoration-none {
+    a {
+        text-decoration: none;
+    }
+}

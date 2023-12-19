@@ -1,0 +1,12 @@
+{
+    "name": "acf/blog-feed",
+    "title": "Blog Feed",
+    "description": "A custom block to display a blog feed.",
+    "category": "lux-blocks",
+    "icon": "list-view",
+    "keywords": ["blog", "articles", "feed"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-blog-feed.php"
+    }
+}

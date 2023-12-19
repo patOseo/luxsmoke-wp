@@ -1,0 +1,46 @@
+#main-menu {
+    .nav-link {
+        color: $light;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        transition: color .2s;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .menu-item:last-child {
+        .nav-link {
+            padding-right: 0;
+        }
+    }
+}
+
+.navbar-toggler {
+    border-radius: 8px !important;
+}
+
+.navbar-brand {
+    img {
+        @include media-breakpoint-down(sm) {
+            max-height: 100px;
+        }
+    }
+}
+
+.offcanvas-header {
+    background-color: $dark;
+}
+
+.offcanvas-body {
+    z-index: 99999;
+    @include media-breakpoint-down(xl) {
+        background-color: $dark;
+        #nav-menu {
+            a.nav-link {
+                color: $primary;
+            }
+        }
+    }
+}

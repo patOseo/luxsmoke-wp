@@ -1,0 +1,32 @@
+.entry-content > .wp-block-group {
+    &.alignfull {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+.wp-block-cover {
+    .wp-block-cover-is-layout-constrained {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+.wp-block-image {
+    &.aligncenter {
+        * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

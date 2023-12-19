@@ -1,0 +1,8 @@
+// Styles to override the Buddi shop.
+
+#buddi-em-menu {
+    min-height: 600px;
+    &.loaded {
+        margin-top: 2rem;
+    }
+}

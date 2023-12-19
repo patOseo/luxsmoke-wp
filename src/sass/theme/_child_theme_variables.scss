@@ -1,0 +1,102 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+// COLORS
+$gold: #D1AA4D;
+$darkgold: #A17E3E;
+$darkgrey: #181818;
+$medgrey: #151414;
+$lightgrey: #707070;
+$lightestgrey: #e6e6e6;
+$softgrey: #f6f6f6;
+$white: #FFFFFF;
+$black: #080808;
+
+$text-muted: $lightgrey;
+
+$primary: $gold;
+$secondary: $darkgrey;
+
+$body-color: $darkgrey !default;
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 1.875,
+  6: $spacer * 3,
+) !default;
+// scss-docs-end spacer-variables-maps
+
+
+// GRADIENTS
+// $grad1: linear-gradient(20deg, $deepblue 0%, $hyperblue 25.52%, $red 90%);
+
+// TYPOGRAPHY
+$font-family-sans-serif: 'Work Sans', arial, sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-margin-bottom: $spacer !default;
+$headings-font-weight: 400;
+
+/*
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+*/ 
+
+// LINKS
+$link-color: $primary;
+
+// BORDERS
+$border-radius:               .25rem !default; // rounded-1 or rounded
+$border-radius-sm:            .25rem !default; // rounded-2
+$border-radius-lg:            .5rem !default; // rounded-3
+$border-radius-xl:            1rem !default; // rounded-4
+$border-radius-2xl:           2rem !default; // rounded-5
+
+// BUTTONS
+$btn-font-weight: 700;
+$btn-line-height: 1;
+$btn-padding-y:               .75rem !default;
+$btn-padding-x:               1.125rem !default;
+$btn-border-radius:           $border-radius-xl !default;
+$btn-border-radius-sm:        $border-radius-xl !default;
+$btn-border-radius-lg:        $border-radius-xl !default;
+
+// INPUTS
+// $input-btn-font-family: 'Inconsolata', sans-serif;
+// $input-font-family: 'Inconsolata', sans-serif;
+// $input-btn-border-color: $hyperblue;
+// $input-btn-border-width: 2px;
+
+// SITE WIDTHS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1170px, 
+  xxl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1380px
+) !default;
+
+$enable-negative-margins: true;
+
+// NAV LINKS
+$nav-link-color: $white;
+$navbar-nav-link-padding-x: 2rem;

@@ -1,0 +1,12 @@
+{
+    "name": "acf/product",
+    "title": "Product Feed",
+    "description": "A custom block to display a product feed.",
+    "category": "lux-blocks",
+    "icon": "cart",
+    "keywords": ["product", "item", "feed"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-product-feed.php"
+    }
+}

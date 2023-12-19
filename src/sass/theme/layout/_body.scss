@@ -1,0 +1,16 @@
+body {
+    -webkit-font-smoothing: antialiased;
+
+    &.verify {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+
+a {
+    transition: color .2s;
+}
+
+::selection {
+    background: $primary;
+}

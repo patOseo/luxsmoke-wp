@@ -1,0 +1,37 @@
+.product-categories-feed {
+    .category-border {
+        border-color: transparent;
+        border-width: 3px;
+        border-style: solid;
+        transition: border .2s;
+    }
+
+    &.style-dark {
+        .category-box {
+            &:hover {
+                .category-border {
+                    border-color: $darkgold;
+                }
+            }
+        }
+    }
+    
+    &.style-light {
+        .category-box {
+            &:hover {
+                .category-border {
+                    border-color: $gold;
+                }
+            }
+        }
+    }
+}
+
+.product-feed {
+    .single-product {
+        transition: box-shadow .2s;
+        &:hover {
+            box-shadow: 4px 4px 14px -8px rgba(0,0,0,.5);
+        }
+    }
+}

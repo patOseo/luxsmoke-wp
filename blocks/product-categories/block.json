@@ -1,0 +1,12 @@
+{
+    "name": "acf/product-categories",
+    "title": "Product Categories",
+    "description": "A custom block to display a product category.",
+    "category": "lux-blocks",
+    "icon": "list-view",
+    "keywords": ["feed", "products", "categories", "type"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-product-categories.php"
+    }
+}

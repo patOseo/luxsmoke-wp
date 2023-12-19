@@ -1,0 +1,15 @@
+.footer-menu {
+    list-style-type: none;
+
+    .nav-link {
+        margin-bottom: .5rem;
+        color: $lightgrey;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        transition: color .2s;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

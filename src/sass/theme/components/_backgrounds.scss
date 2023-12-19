@@ -1,0 +1,31 @@
+.smoke-bg {
+    background-image: url('/wp-content/themes/luxsmoke/images/smoke-alpha.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.smoke-bg-fixed {
+        background-attachment: fixed;
+    }
+}
+
+.bg-darkgrey {
+    background-color: $darkgrey;
+}
+
+.bg-medgrey {
+    background-color: $medgrey;
+
+}
+
+.bg-lightgrey {
+    background-color: $lightgrey;
+}
+
+.bg-lightestgrey {
+    background-color: $lightestgrey;
+}
+
+.bg-softgrey {
+    background-color: $softgrey;
+}

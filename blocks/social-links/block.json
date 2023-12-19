@@ -1,0 +1,12 @@
+{
+    "name": "acf/social-links",
+    "title": "Social Links",
+    "description": "A custom block to display social links.",
+    "category": "lux-blocks",
+    "icon": "share",
+    "keywords": ["social", "links", "facebook", "twitter", "instagram"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-social-links.php"
+    }
+}
