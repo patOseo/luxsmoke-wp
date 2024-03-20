@@ -28,7 +28,7 @@ if($count >= 4) {
                 <div class="product-img text-center mb-3">
                     <?php echo wp_get_attachment_image($img, array(300, 300), '', array('class' => 'mx-auto')); ?>
                 </div>
-                <a class="stretched-link text-body text-decoration-none" href="/products#/product/<?= $p_id; ?>"><?= $name; ?></a>
+                <a class="stretched-link text-body text-decoration-none" href="/products/?identifier=product&id=<?= $p_id; ?>"><?= $name; ?></a>
                 <p class="text-uppercase fs-sm fw-bold">By <?= $provider; ?></p>
                 <p class="fw-bold mb-0"><?= $price; ?> | <?= $amount; ?></p>
             </div>
