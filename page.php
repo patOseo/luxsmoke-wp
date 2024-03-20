@@ -38,11 +38,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page-wrapper -->
 
+
+<?php /* Old Buddi store ?>
 <?php if(get_field('cat_page')): 
 	$fields = get_field('category_fields');
 	$name = $fields['buddi_name'];
 	$type = $fields['categorization'];
 ?>
+
 
 <script>
 	// Get the current URL
@@ -64,6 +67,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 </script>
 
 <?php endif; ?>
+
+<?php */ ?>
 
 <?php
 get_footer();

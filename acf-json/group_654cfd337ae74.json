@@ -96,11 +96,31 @@
                 },
                 {
                     "key": "field_654d321a07906",
-                    "label": "Buddi Name",
+                    "label": "Category Name",
                     "name": "buddi_name",
                     "aria-label": "",
                     "type": "text",
-                    "instructions": "This is used to generate the Buddi URL.",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65fb1a21abf81",
+                    "label": "TechPOS Category ID",
+                    "name": "techpos_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -135,5 +155,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699558698
+    "modified": 1710955080
 }

@@ -1,0 +1,27 @@
+#techposFrame {
+    margin-top: 2rem;
+    
+    height: 100%;
+    min-height: 9200px;
+
+    @media (min-width: 554px) {
+        min-height: 4800px;
+    }
+
+    @media (min-width: 690px) and (max-width: 882px) {
+        min-height: 9200px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-height: 4800px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+        min-height: 3500px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        min-height: 2600px;
+    }
+}

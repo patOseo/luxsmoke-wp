@@ -33,7 +33,7 @@ $feed_query = new WP_Query( $args );
 if($feed_query->have_posts()): ?>
 
 <div class="product-categories-feed my-5 style-<?php echo esc_attr($style); ?>" uk-scrollspy="target: .row; cls: uk-animation-slide-bottom-medium; delay: 100;">
-    <div class="row g-2 g-xl-6 mx-xl-n4 row-cols-xl-<?= $cols; ?> row-cols-md-3 row-cols-2 align-items-stretch" uk-scrollspy="target: .category-box; cls: uk-animation-slide-bottom-medium; delay: 100;">
+    <div class="row g-2 g-xl-6 mx-xl-n4 row-cols-xl-<?= $cols; ?> row-cols-md-3 row-cols-2 align-items-stretch justify-content-center" uk-scrollspy="target: .category-box; cls: uk-animation-slide-bottom-medium; delay: 100;">
         <?php while($feed_query->have_posts()): $feed_query->the_post(); ?>
         <?php
             $cat_fields = get_field('category_fields', get_the_ID());
