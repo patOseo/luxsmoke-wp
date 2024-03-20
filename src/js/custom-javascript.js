@@ -11,6 +11,7 @@ jQuery(function($){
         $('#gform_2 input[type="text"], #gform_2 input[type="email"]').addClass('form-control px-3 rounded-5 bg-transparent border-secondary');
         $('#gform_2 input[type="submit"]').addClass('btn btn-secondary border-0 rounded-5 w-100 fw-600 text-uppercase');
     });
+
 });
 
 

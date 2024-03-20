@@ -42,6 +42,7 @@
   },
   "homepage": "https://understrap.com",
   "dependencies": {
+    "iframe-resizer": "^4.3.9",
     "uikit": "^3.17.8"
   },
   "devDependencies": {
