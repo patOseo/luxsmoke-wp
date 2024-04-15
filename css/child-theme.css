@@ -11620,6 +11620,14 @@ a {
   }
 }
 
+.daily-special {
+  background: rgb(21, 20, 20);
+  background: linear-gradient(90deg, rgb(21, 20, 20) 65%, rgb(149, 10, 10) 100%);
+}
+.daily-special p:last-child {
+  margin-bottom: 0 !important;
+}
+
 .entry-content > .wp-block-group.alignfull {
   padding-left: 1.5rem;
   padding-right: 1.5rem;

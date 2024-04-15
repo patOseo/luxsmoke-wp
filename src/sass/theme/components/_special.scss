@@ -1,0 +1,8 @@
+.daily-special {
+    background: rgb(21,20,20);
+    background: linear-gradient(90deg, rgba(21,20,20,1) 65%, rgba(149,10,10,1) 100%);
+
+    p:last-child {
+        margin-bottom: 0 !important;
+    }
+}

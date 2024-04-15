@@ -82,16 +82,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	$current_time = date('H:i');
 	if($current_time >= $special_start_time && $current_time <= $special_end_time):
 ?>
-<div class="daily-special mt-5 px-3 px-lg-0">
-	<div class="container rounded-5 px-5 py-5 border border-1">
+<div class="text-white mt-5 px-3 px-lg-0">
+	<div class="container daily-special rounded-5 px-5 py-5 border border-1">
 			<div class="row align-items-center h-100">
-				<div class="col-md-8 col-lg-6 mb-3 mb-md-0">
+				<div class="col-md-8 mb-3 mb-md-0">
 				<p class="heading mb-2"><?= $special['small_heading']; ?></p>
-					<p class="h3 mb-0"><?= $special['heading']; ?></p>
-					
+					<p class="h3 mb-3"><?= $special['heading']; ?></p>
+					<?= $special['details']; ?>
 				</div>
-				<div class="col-md-4 col-lg-6 text-md-end">
-					<a class="btn btn-primary rounded-pill text-white fw-normal ms-2 px-3 px-lg-5 py-2" href="<?php echo esc_url($special['button_link']); ?>"><?= $special['button_text']; ?></a>
+				<div class="col-md-4 text-md-end">
+					<a class="btn btn-outline-light rounded-pill fw-normal ms-2 px-3 px-lg-5 py-2" href="<?php echo esc_url($special['button_link']); ?>"><?= $special['button_text']; ?></a>
 				</div>
 			</div>
 	</div>
