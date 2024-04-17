@@ -3,27 +3,27 @@
 	$between = $special['show_between'];
 	date_default_timezone_set('America/Toronto');
 
-	// Get current timestamp and set it to today's date
-    $current_timestamp = time();
-    $current_date = date('Y-m-d');
-    $current_datetime = date_create($current_date . ' ' . date('H:i', $current_timestamp));
+	$current_t = date('H:i:s');
+	$start_t = $between['start'];
+	$end_t = $between['end'];
 
-	// Get start and end timestamps
-    $start_timestamp = strtotime($between['start']);
-    $end_timestamp = strtotime($between['end']);
+	$show_special = false;
 
-    // If end time is earlier than start time, adjust end time to be on the next day
-    if ($end_timestamp < $start_timestamp) {
-        $end_datetime = date_create($current_date . ' ' . date('H:i', $end_timestamp));
-        $end_datetime->modify('+1 day'); // Adjust end time to be on the next day
-    } else {
-        $end_datetime = date_create($current_date . ' ' . date('H:i', $end_timestamp));
-    }
+	if($start_t > $end_t) {
+		if($current_t >= $start_t || $current_t <= $end_t) {
+			$show_special = true;
+		}
+	} elseif($start_t < $end_t) {
+		if($current_t >= $start_t && $current_t <= $end_t) {
+			$show_special = true;
+		}
+	} elseif($start_t == $end_t) {
+		$show_special = true;
+	} else {
+		$show_special = false;
+	}
 
-    // Convert timestamps to date objects for comparison
-    $start_datetime = date_create($current_date . ' ' . date('H:i', $start_timestamp));
-
-	if($current_datetime >= $start_datetime && $current_datetime <= $end_datetime):
+	if($show_special):
 ?>
 <div class="text-white mt-5 px-3 px-lg-0">
 	<div class="container daily-special rounded-5 px-5 py-5 border border-1">
