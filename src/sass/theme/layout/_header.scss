@@ -23,8 +23,15 @@
 
 .navbar-brand {
     img {
+        max-height: 130px;
+        
         @include media-breakpoint-down(sm) {
             max-height: 100px;
+        }
+
+        &.custom-logo {
+            height: auto;
+            width: auto;
         }
     }
 }

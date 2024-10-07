@@ -10,6 +10,8 @@
 defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
+
+$logo = get_field('logo', 'option');
 ?>
 
 <?php get_template_part('global-templates/top-bar'); ?>
@@ -25,7 +27,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="navbar-brand mb-0 py-0">
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
-				<img alt="Lux Smoke Logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/luxsmoke-logo-alpha-shadow.svg" width="160" height="130">
+				<?php if($logo !== false): ?>
+					<?php echo wp_get_attachment_image($logo, 'full', '', array('class' => 'custom-logo')); ?>
+				<?php else: ?>
+					<img alt="Lux Smoke Logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/luxsmoke-logo-alpha-shadow.svg" width="160" height="130">
+				<?php endif; ?>
 			</a>
 		</div>
 

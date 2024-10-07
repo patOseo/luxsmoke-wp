@@ -11395,10 +11395,17 @@ a {
   border-radius: 8px !important;
 }
 
+.navbar-brand img {
+  max-height: 130px;
+}
 @media (max-width: 575.98px) {
   .navbar-brand img {
     max-height: 100px;
   }
+}
+.navbar-brand img.custom-logo {
+  height: auto;
+  width: auto;
 }
 
 .offcanvas-header {
