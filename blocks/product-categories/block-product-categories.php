@@ -16,19 +16,21 @@ if($style == 'light') {
 $args = array(
     'post_type' => 'page',
     'posts_per_page' => -1,
-    'orderby' => 'menu_order',
-    'order' => 'ASC',
+    
 );
 
 if($feed == 'manual') {
     $cats = get_field('select_categories');
     $args['post__in'] = $cats;
+    $args['orderby'] = 'post__in';
 } else {
     $args['meta_query'][] = array(
         'key' => 'category_fields_categorization',
         'value' => $feed,
         'compare' => 'LIKE'
     );
+    $args['orderby'] = 'menu_order';
+    $args['order'] = 'ASC';
 }
 
 // Create a new WP Query
