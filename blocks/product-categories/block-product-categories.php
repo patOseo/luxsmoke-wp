@@ -18,14 +18,18 @@ $args = array(
     'posts_per_page' => -1,
     'orderby' => 'menu_order',
     'order' => 'ASC',
-    'meta_query' => array(
-        array(
-            'key' => 'category_fields_categorization',
-            'value' => $feed,
-            'compare' => 'LIKE'
-        )
-    )
 );
+
+if($feed == 'manual') {
+    $cats = get_field('select_categories');
+    $args['post__in'] = $cats;
+} else {
+    $args['meta_query'][] = array(
+        'key' => 'category_fields_categorization',
+        'value' => $feed,
+        'compare' => 'LIKE'
+    );
+}
 
 // Create a new WP Query
 $feed_query = new WP_Query( $args );

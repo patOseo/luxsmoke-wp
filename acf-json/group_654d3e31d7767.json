@@ -18,7 +18,8 @@
             },
             "choices": {
                 "cannabis_cat": "Cannabis Category",
-                "cannabis_type": "Cannabis Type"
+                "cannabis_type": "Cannabis Type",
+                "manual": "Select Manually"
             },
             "default_value": "cannabis_cat",
             "return_format": "value",
@@ -69,6 +70,47 @@
             "step": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_671905f34db1a",
+            "label": "Select Categories",
+            "name": "select_categories",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654d3e32e184a",
+                        "operator": "==",
+                        "value": "manual"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "return_format": "id",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -89,5 +131,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699562218
+    "modified": 1729693216
 }
