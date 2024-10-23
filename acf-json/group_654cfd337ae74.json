@@ -62,7 +62,8 @@
                     },
                     "choices": {
                         "cannabis_cat": "Cannabis Category",
-                        "cannabis_type": "Cannabis Type"
+                        "cannabis_type": "Cannabis Type",
+                        "none": "None"
                     },
                     "default_value": "cannabis_cat",
                     "return_format": "value",
@@ -155,5 +156,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1710955080
+    "modified": 1729693545
 }
